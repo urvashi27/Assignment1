@@ -1,0 +1,45 @@
+
+<div fxLayout="column" fxLayoutAlign="center center" style="height:80%">
+    
+    <div fxlayout="column" fxFlex="60" fxLayoutAlign="center center">
+        
+        <mat-card class="login">
+                <form [formGroup]="userDetailsForm">     
+            <div fxLayout="row" fxLayoutAlign="center center">
+                
+                <mat-form-field>
+                    <mat-label>Username</mat-label>
+                    <input  matInput maxlength="8" placeholder="Username" formControlName="username"  >
+                </mat-form-field>
+             
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                    <mat-form-field>
+                            <mat-label>Password</mat-label>
+                            <input type="password" maxlength="6" matInput  placeholder="password" formControlName="password">
+                        </mat-form-field>
+            </div>
+            
+            
+                    
+                            <div fxLayout="row" fxLayoutAlign="center center">
+                                
+                                <button mat-raised-button  (click)="loginUser()"
+                                    style="background: black; color:white">Login </button>
+                                    
+                            </div>
+
+           </form>
+        </mat-card>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+        
